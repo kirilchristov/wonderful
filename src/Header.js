@@ -18,8 +18,8 @@ function Header(){
             <Nav.Link className="menu-item" href="#contact">CONTACT</Nav.Link>
           </Nav>
           <Nav>
-          <Nav className="mr-auto">
-            <Nav.Link className="profile-badge-text" href="#profile">Richard Montgomery</Nav.Link>
+          <Nav className="mr-auto name-tag">
+            <Nav.Link className="profile-badge-text name-tag-only" href="#profile">Richard Montgomery</Nav.Link>
             <Nav.Link href="#home" className="profile-badge profile-badge-text">{initials}</Nav.Link>
           </Nav>
           </Nav>

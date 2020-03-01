@@ -1,13 +1,16 @@
-//------------Navigation Menu----------//
-
-//1 Header
 
 .container {
   max-width: 1205px;
 }
 
+//------------Navigation Menu----------//
 .header {
   background-color: white;
+}
+
+.navbar {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 // Logo
@@ -19,6 +22,7 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
+  margin-right: 60px;
 }
 
 // Nav links
@@ -26,15 +30,25 @@
   color: black !important;
   font-family: "Open Sans", Helvetica, Arial, serif;
   font-weight: 300;
-  font-style: normal;
-  font-size: 12.0px;
+  font-size: 12px;
+  font-family: OpenSans-Light;
 }
+
 .menu-item {
-  margin-left: 15px;
-  margin-right: 15px;
-  // position: relative;
+  margin-right: 30px;
 }
-// Profile Badge
+
+// Nametag only
+.name-tag-only {
+  margin-right: 16px;
+}
+
+//Profile container
+.mr-auto {
+  align-items: baseline;
+}
+
+// Profile Badge 
 .profile-badge {
   height: 50px;
   width: 50px;
@@ -50,12 +64,6 @@
   font-size: 16px;
   font-weight: 600;
 }
-
-//Profile container
-.mr-auto {
-  align-items: baseline;
-}
-
 
 //------------Hero---------------------//
 
