@@ -1,0 +1,71 @@
+//------------Navigation Menu----------//
+
+//1 Header
+
+.container {
+  max-width: 1205px;
+}
+
+.header {
+  background-color: white;
+}
+
+// Logo
+.navbar-brand {
+  background-image: url('./assets/lexus-logo.png');
+  display: block;
+  width: 216px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+
+// Nav links
+.nav-link {
+  color: black !important;
+  font-family: "Open Sans", Helvetica, Arial, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 12.0px;
+}
+.menu-item {
+  margin-left: 15px;
+  margin-right: 15px;
+  // position: relative;
+}
+// Profile Badge
+.profile-badge {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 50%;
+  color: white !important; // <- overrides the bootstrap style
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.profile-badge-text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+//Profile container
+.mr-auto {
+  align-items: baseline;
+}
+
+
+//------------Hero---------------------//
+
+.hero {
+  background-color: olive;
+  width: 100%;
+}
+
+//------------Dealerships--------------//
+
+.dealership {
+  background-color: indianred;  
+}
