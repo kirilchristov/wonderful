@@ -13,6 +13,12 @@ function Hero(props){
   return (
     
     <div className="hero">
+      <div className="info">
+        <p className="p-light">INTRODUCING THE NEW</p>
+        <h1>{props.selectedCar.title}</h1>
+        <p className="p-light">{props.selectedCar.info}</p>
+        <div>...</div>
+      </div>
       <Carousel 
       className="carousel-custom"
       selectedItem={1}
@@ -22,10 +28,11 @@ function Hero(props){
       centerMode={true}
       onChange={(e) => props.handleChange(e)}
       centerSlidePercentage={50}
-      statusFormatter={(curr, total)=>console.log(`Slide ${curr} of ${total}`)} 
+      // statusFormatter is an empty function that disables the native behaviour of the component
+      statusFormatter={()=> {}} 
       >
         <div onClick={()=> props.handleClick(car1.id)}>
-          <img className="car-image" src={car1.imageUrl} alt={car1.title} />
+          <img className="car-image far-left" src={car1.imageUrl} alt={car1.title} />
         </div>
         <div onClick={()=> props.handleClick(car2.id)}>
           <img className="car-image" src={car2.imageUrl} alt={car2.title} />
@@ -34,10 +41,9 @@ function Hero(props){
           <img className="car-image" src={car3.imageUrl}  alt={car3.title} />
         </div>
       </Carousel>
-      <p className="legend">{props.selectedCar.title}</p>
-      <p className="price">STARTING AT ${props.selectedCar.price}</p>
-      <div className="info">
-        <p>{props.selectedCar.info}</p>
+      <div className="text">
+        <p className="car-model">{props.selectedCar.title}</p>
+        <p className="price-tag">STARTING AT ${props.selectedCar.price}</p>
       </div>
     </div>
   );

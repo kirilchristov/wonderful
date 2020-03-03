@@ -10,7 +10,7 @@ const carData = [
   {
     id: 2,
     title: '2020 LS HYBRID',
-    info: 'Built on the platform of the high-performance LC coupe, the LS 500 features our twin-turbocharged engine and offers meticulous craftsmanship like three premium wood-trim designs so unique they can take up to four months and 32 steps to complete.',
+    info: `Built on the platform of the high-performance LC coupe, the LS 500 features our twin-turbocharged engine and offers meticulous craftsmanship like three premium wood-trim designs so unique they can take up to four months and 32 steps to complete.`,
     imageUrl: 'images/ls-hybrid.jpg',
     price: '80,010',
     location: []
