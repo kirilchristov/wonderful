@@ -3,6 +3,7 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
+
 function Hero(props){
   const { carData } = props;
 
@@ -17,7 +18,6 @@ function Hero(props){
         <p className="p-light">INTRODUCING THE NEW</p>
         <h1>{props.selectedCar.title}</h1>
         <p className="p-light">{props.selectedCar.info}</p>
-        <div>...</div>
       </div>
       <Carousel 
       className="carousel-custom"

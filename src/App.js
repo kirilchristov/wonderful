@@ -6,6 +6,7 @@ import Dealership from './Dealership'
 import carData from './CarData'
 
 import './bootstrap.min.css'
+
 import './App.scss';
 
 
@@ -34,9 +35,6 @@ class App extends Component {
     console.log('LINE 34 APP.JS | I get as param...', id)
   }
 
-  componentDidUpdate () {
-    console.log('Did Update selected car',this.state.selectedCar.title);
-  }
 
   render() {
     return (
