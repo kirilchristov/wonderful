@@ -1,6 +1,6 @@
 
 .container {
-  max-width: 1205px;
+  max-width: 1205px; //Check this size again
 }
 
 //------------Navigation Menu----------//
@@ -33,8 +33,6 @@
   font-size: 12px;
   font-family: OpenSans-Light;
 }
-
-
 
 .menu-item {
   margin-right: 30px;
@@ -70,16 +68,47 @@
 //------------Hero---------------------//
 
 .hero {
-  background-color: olive;
+  background-color: white;
+  margin-top: 82px;
 }
 
 .car-image {
-  width: 720px;
-  height: auto;
+  // width: 50%;
+  // height: 348px;
+}
+
+.control-dots {
+  // Give me some style
 }
 
 .carousel-custom {
-  border: 1px splid green;
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+}
+
+.carousel {
+  .slider-wrapper {
+    // margin-top: 2rem;
+    top: 2rem;
+  }
+}
+
+// All slides
+.slide {
+  opacity: 50%;
+}
+//The Selected Slide
+.selected {
+  opacity: 100%;
+}
+
+.info {
+  background: black;
+  border: 1px solid #FFFFFF;
+  font-family: OpenSans-Light;
+  font-size: 14px;
+  color: #FFFFFF;
 }
 
 //------------Dealerships--------------//
