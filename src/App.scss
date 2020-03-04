@@ -153,3 +153,24 @@ body {
 .dealership {
   background-color: indianred;  
 }
+
+.marker-icon {
+  height: 100px;
+}
+
+// Hide Google Maps Controls
+.gm-svpc,
+.gm-style-mtc,
+.gm-control-active, 
+.gm-fullscreen-control,
+// .gmnoprint,
+.gm-style-cc {
+  display: none;
+}
+
+.gmnoprint {
+  left: 0px;
+  bottom: 180px !important;
+}
+
+
