@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CarData from './CarData'
 import Button from './Button'
+import Image from './Image'
 
 
 function Sidebar(props){
@@ -17,13 +18,13 @@ function Sidebar(props){
 
   const itemsToDisplay = cars.map((item,idx) => (
     <div key={idx} className="car-container">
-    <img className="thumb" src={item.thumbUrl} alt={item.title}/>
+      {/* <img className="thumb" src={item.thumbUrl} alt={item.title}/> */}
+      <Image src={item.thumbUrl} alt={item.title}/>
       <h1>{item.title}</h1>
       <p>STARTING AT ${item.price}</p>
-      <Button onClick={()=>console.log('A client requested information about: ', )}/>
+      <Button  />
     </div> 
   ))
-
 
   return (
    <div className="sidebar-container">
