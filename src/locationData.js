@@ -6,7 +6,7 @@ const locationData = [
       lat: 40.678177,
       lon:-73.944160
     },
-    inStock: [],
+    inStock: [1,2,3],
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const locationData = [
       lat: 40.728226,
       lon:-73.794853
     },
-    inStock: [],
+    inStock: [1,2],
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const locationData = [
       lat: 40.7357,
       lon: -74.1724
     },
-    inStock: [],
+    inStock: [3],
   },
   {
     id: 4,
@@ -38,10 +38,3 @@ const locationData = [
 ];
 
 export default locationData;
-
-
-
-// - **Location 1:** A dealership in Brooklyn, NY has all three trims available
-// 	- **Location 2:** A dealership in Queens, NY only has the LS and the LS HYBRID
-// 	- **Location 3:** A dealership in Newark, NJ only has the LS F SPORT
-// 	- **Location 4:** A dealership in Plainfield, NJ doesn't have any of the trims

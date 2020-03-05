@@ -32,9 +32,7 @@ class App extends Component {
     this.setState({
       selectedCar: carData[id]
     })
-    console.log('LINE 34 APP.JS | I get as param...', id)
   }
-
 
   render() {
     return (

@@ -204,6 +204,48 @@ body {
   }
 }
 
+.car-container {
+  .thumb {
+    height: 43.5px;
+    width: 100px;
+  }
+}
+
+.btn-non-clicked {
+  color: white;
+  background-color: black;
+  padding: 7px 8px;
+  font-weight: 400;
+  font-size: 8px;
+  letter-spacing: 1.42px;
+  line-height: 8px;
+  width: 101px;
+  height: 22px;
+  border: none;
+}
+
+.btn-clicked {
+  border: 1px solid #000000;
+  border-radius: 1px;
+  padding: 7px 7px 7px 9px;
+  font-weight: 400;
+  font-size: 8px;
+  color: black;
+  letter-spacing: 1.42px;
+  line-height: 8px;
+  width: 78px;
+  height: 22px;
+}
+
+// //Since it's one-time use - !important is used for rapid styling
+.MuiButton-root {
+
+}
+
+// .MuiButton-root:focus {
+//   color: green;
+// }
+
 
 
 

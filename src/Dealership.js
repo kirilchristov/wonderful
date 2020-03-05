@@ -36,7 +36,7 @@ function Dealership(){
             locationData={locationData}
           />
         </div>
-        <Sidebar className="sidebar" selectedLocation={selectedLocation} />
+        <Sidebar className="sidebar" selectedLocation={selectedLocation} locationData={locationData} />
       </div>
     </div>
   );
