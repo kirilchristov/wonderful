@@ -28,7 +28,7 @@ function Sidebar(props){
 
   return (
    <div className="sidebar-container">
-     <h2>Availability for {activeLocation}:</h2>
+     <h2>Availability at {activeLocation}:</h2>
      <div className="car-list">
        {itemsToDisplay}
      </div>

@@ -4,6 +4,7 @@ import Sidebar from './Sideabar'
 import config from './config.js'
 
 import locationData from './locationData'
+import crosshair from '../src/assets/crosshair.png'
 
 function Dealership(){
   const [selectedLocation, setSelectedLocation] = useState(locationData[0])
@@ -18,7 +19,10 @@ function Dealership(){
       <div className="headline-container">
         <div className="headline">
           <div className="crosshair">
-            <img src="/images/crosshair.png" alt="crosshair-icon"></img>
+          {/* Serving from public */}
+            {/* <img src="/images/crosshair.png" alt="crosshair-icon"></img> */}
+          {/* Serving from src */}
+            <img src={crosshair} alt="crosshair-icon"></img>
           </div>
           <h1 className="section-title">SELECT YOUR DEALERSHIP</h1>
         </div>
