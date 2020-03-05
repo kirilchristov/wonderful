@@ -82,21 +82,26 @@ body {
   // Give me some style
 }
 
-.carousel-custom {
-  width: 100vw;
-  position: relative;
-  left: calc(-50vw + 50%);
-  margin-top: -200px;
-}
+// .carousel-custom {
+//   width: 100vw;
+//   position: relative;
+//   left: calc(-50vw + 50%);
+//   margin-top: -200px;
+// }
 
-.carousel-custom {
-    .slide {
-        opacity: 50% !important;
-    }
-    .selected {
-      opacity: 100% !important;
-  }
-  }
+// .carousel-custom {
+//     .slide {
+//         opacity: 50% !important;
+//     }
+//     .selected {
+//       opacity: 100% !important;
+//   }
+//   }
+
+
+.carousel-custom .selected, .carousel-custom .slide {
+  opacity: 100%!important;
+}
 
 
 
