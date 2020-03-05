@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/wonderful/static/css/main.657c4670.chunk.css",
-    "main.js": "/wonderful/static/js/main.3451ad95.chunk.js",
-    "main.js.map": "/wonderful/static/js/main.3451ad95.chunk.js.map",
-    "runtime-main.js": "/wonderful/static/js/runtime-main.dea49c84.js",
-    "runtime-main.js.map": "/wonderful/static/js/runtime-main.dea49c84.js.map",
-    "static/css/2.e49e09ab.chunk.css": "/wonderful/static/css/2.e49e09ab.chunk.css",
-    "static/js/2.d0db039e.chunk.js": "/wonderful/static/js/2.d0db039e.chunk.js",
-    "static/js/2.d0db039e.chunk.js.map": "/wonderful/static/js/2.d0db039e.chunk.js.map",
-    "index.html": "/wonderful/index.html",
-    "precache-manifest.06b8aaeaa5a9c8327f0ef0a42e37a97e.js": "/wonderful/precache-manifest.06b8aaeaa5a9c8327f0ef0a42e37a97e.js",
-    "service-worker.js": "/wonderful/service-worker.js",
-    "static/css/2.e49e09ab.chunk.css.map": "/wonderful/static/css/2.e49e09ab.chunk.css.map",
-    "static/css/main.657c4670.chunk.css.map": "/wonderful/static/css/main.657c4670.chunk.css.map",
-    "static/js/2.d0db039e.chunk.js.LICENSE.txt": "/wonderful/static/js/2.d0db039e.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/wonderful/static/media/lexus-logo.311b4c47.png"
+    "main.css": "./static/css/main.12597a20.chunk.css",
+    "main.js": "./static/js/main.0086cbac.chunk.js",
+    "main.js.map": "./static/js/main.0086cbac.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.78d153bd.js",
+    "runtime-main.js.map": "./static/js/runtime-main.78d153bd.js.map",
+    "static/css/2.e49e09ab.chunk.css": "./static/css/2.e49e09ab.chunk.css",
+    "static/js/2.d0db039e.chunk.js": "./static/js/2.d0db039e.chunk.js",
+    "static/js/2.d0db039e.chunk.js.map": "./static/js/2.d0db039e.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.78960c94421e91f975c6590279a94ab1.js": "./precache-manifest.78960c94421e91f975c6590279a94ab1.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.e49e09ab.chunk.css.map": "./static/css/2.e49e09ab.chunk.css.map",
+    "static/css/main.12597a20.chunk.css.map": "./static/css/main.12597a20.chunk.css.map",
+    "static/js/2.d0db039e.chunk.js.LICENSE.txt": "./static/js/2.d0db039e.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "./static/media/lexus-logo.311b4c47.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.dea49c84.js",
+    "static/js/runtime-main.78d153bd.js",
     "static/css/2.e49e09ab.chunk.css",
     "static/js/2.d0db039e.chunk.js",
-    "static/css/main.657c4670.chunk.css",
-    "static/js/main.3451ad95.chunk.js"
+    "static/css/main.12597a20.chunk.css",
+    "static/js/main.0086cbac.chunk.js"
   ]
 }
