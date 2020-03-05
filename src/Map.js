@@ -1,36 +1,31 @@
-import React, { useEffect } from 'react';
-import { GoogleMap, withScriptjs, withGoogleMap, Marker, MarkerProps } from 'react-google-maps'
-import locationData from './locationData'
+import React from 'react';
+import { GoogleMap, withScriptjs, withGoogleMap, Marker } from 'react-google-maps'
+
 import mapStyles from './mapStyles'
 
 
 function Map(props){
 
-
   return (
-    <GoogleMap 
-      defaultZoom={10}
-      defaultCenter={{lat:40.712776, lng: -74.005974}}
-      defaultOptions={{styles: mapStyles}}
-    >
-      {locationData.map(location => (
-        <Marker 
-          className="marker"
-          key={location.id}
-          position={{
-            lat:location.coordinates.lat, 
-            lng:location.coordinates.lon
+      <GoogleMap 
+        defaultZoom={11}
+        defaultCenter={{lat:40.712776, lng: -74.005974}}
+        defaultOptions={{styles: mapStyles}}
+      >
+        {props.locationData.map(location => (
+          <Marker 
+            key={location.id}
+            position={{
+              lat:location.coordinates.lat, 
+              lng:location.coordinates.lon
+              }}
+            onClick={() => {
+              props.handleClick(location);        
             }}
-          onClick={() => {
-            props.handleClick(location);
-          }}
-          icon={{
-            url: '/images/black_pin.png',
-            scaledSize: new window.google.maps.Size(17,24)
-          }}
-        />
-      ))}
-    </GoogleMap>
+            icon={{url:(props.selectedLocation.id === location.id) ? '/images/red_pin.png' : '/images/black_pin.png', scaledSize: new window.google.maps.Size(17,24)}}
+          />
+        ))}
+      </GoogleMap>
   );
 }
 
