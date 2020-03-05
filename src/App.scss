@@ -91,12 +91,16 @@ body {
 
 
 // All slides
-.slide {
-  opacity: 50%;
-}
-//The Selected Slide
-.selected {
-  opacity: 100%;
+// .slide {
+//   opacity: 50%;
+// }
+// //The Selected Slide
+// .selected {
+//   opacity: 100%;
+// }
+
+.selected, .slide {
+  opacity: 1% !important;
 }
 
 .info {
