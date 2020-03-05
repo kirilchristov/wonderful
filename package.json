@@ -2,6 +2,7 @@
   "name": "wonderful-lexus",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kirilchristov.github.io/wonderful/",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@testing-library/jest-dom": "^4.2.4",
@@ -9,7 +10,6 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.4.1",
     "dotnav": "0.0.1",
-    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0-beta.16",
@@ -18,6 +18,8 @@
     "react-scripts": "3.4.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "react-responsive-carousel": "^3.1.51"
   }
 }
