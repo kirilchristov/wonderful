@@ -154,16 +154,11 @@ body {
   background-color: indianred;  
 }
 
-.marker-icon {
-  height: 100px;
-}
-
 // Hide Google Maps Controls
 .gm-svpc,
 .gm-style-mtc,
 .gm-control-active, 
 .gm-fullscreen-control,
-// .gmnoprint,
 .gm-style-cc {
   display: none;
 }
@@ -173,4 +168,6 @@ body {
   bottom: 180px !important;
 }
 
-
+img:hover {
+  opacity: 50%;
+}

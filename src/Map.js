@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { GoogleMap, withScriptjs, withGoogleMap, Marker } from 'react-google-maps'
+import { GoogleMap, withScriptjs, withGoogleMap, Marker, MarkerProps } from 'react-google-maps'
 import locationData from './locationData'
 import mapStyles from './mapStyles'
 
@@ -15,6 +15,7 @@ function Map(props){
     >
       {locationData.map(location => (
         <Marker 
+          className="marker"
           key={location.id}
           position={{
             lat:location.coordinates.lat, 
