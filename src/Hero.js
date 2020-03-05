@@ -28,7 +28,6 @@ function Hero(props){
       centerMode={true}
       onChange={(e) => props.handleChange(e)}
       centerSlidePercentage={50}
-      // statusFormatter is an empty function that disables the native behaviour of the component
       statusFormatter={()=> {}} 
       >
         <div onClick={()=> props.handleClick(car1.id)}>
@@ -51,14 +50,5 @@ function Hero(props){
 
 export default Hero;
 
-//Let's create dynamic element that pulls data
-  // const CarElement = carData.map((car,idx) => {
-  //   console.log('line 14 Hero',car)
-  //   return (
-  //     <div onClick={props.handleClick}>
-  //       <img className="car-image" src={car[idx].imageUrl}  alt={car[idx].title} />
-  //     </div>
-  //   )
-  // })
 
 
