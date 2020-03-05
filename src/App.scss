@@ -98,10 +98,13 @@ body {
 //   }
 //   }
 
+.carousel-custom .slide {
+  opacity: 0.5!important;
+}
 
-// .carousel-custom .selected, .carousel-custom .slide {
-//   opacity: 100%!important;
-// }
+.carousel-custom .selected {
+  opacity: 1!important;
+}
 
 
 
