@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CarData from './CarData'
 import Button from './Button'
 import Image from './Image'

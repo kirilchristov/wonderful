@@ -3,6 +3,9 @@ import { GoogleMap, withScriptjs, withGoogleMap, Marker } from 'react-google-map
 
 import mapStyles from './mapStyles'
 
+const redPin = '/images/red_pin.png';
+const blackPin = '/images/black_pin.png';
+
 
 function Map(props){
 
@@ -22,7 +25,7 @@ function Map(props){
             onClick={() => {
               props.handleClick(location);        
             }}
-            icon={{url:(props.selectedLocation.id === location.id) ? '/images/red_pin.png' : '/images/black_pin.jpg', scaledSize: new window.google.maps.Size(17,24)}}
+            icon={{url:(props.selectedLocation.id === location.id) ? redPin : blackPin, scaledSize: new window.google.maps.Size(17,24)}}
           />
         ))}
       </GoogleMap>
