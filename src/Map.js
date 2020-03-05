@@ -22,7 +22,7 @@ function Map(props){
             onClick={() => {
               props.handleClick(location);        
             }}
-            icon={{url:(props.selectedLocation.id === location.id) ? '/images/red_pin.png' : '/images/black_pin.png', scaledSize: new window.google.maps.Size(17,24)}}
+            icon={{url:(props.selectedLocation.id === location.id) ? '/images/red_pin.png' : '/images/black_pin.jpg', scaledSize: new window.google.maps.Size(17,24)}}
           />
         ))}
       </GoogleMap>
