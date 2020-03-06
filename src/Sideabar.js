@@ -18,7 +18,6 @@ function Sidebar(props){
 
   const itemsToDisplay = cars.map((item,idx) => (
     <div key={idx} className="car-container">
-      {/* <img className="thumb" src={item.thumbUrl} alt={item.title}/> */}
       <Image className="car-container-image" src={item.thumbUrl} alt={item.title}/>
       <div className="car-container-content">
         <h1>{item.title}</h1>

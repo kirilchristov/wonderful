@@ -102,6 +102,7 @@ body {
 
 }
 
+//Info bar
 .info {
   background: rgba(0,0,0,0.90);
   font-weight: 300;
@@ -126,6 +127,36 @@ body {
   .p-light {
     font-weight: 300;
   }
+}
+
+//Info bar dots
+.info {
+  li {
+    list-style: none;
+  }
+  .dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 75px;
+
+    .filledDot,
+    .emptyDot {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+    }
+    
+    .filledDot {
+      background-color: white;
+    }
+    .emptyDot {
+      background-color: transparent;
+      border: 1px solid white;
+    }
+  }
+  
 }
 
 .text {
@@ -180,6 +211,7 @@ body {
 
 .map-sidebar-container {
   display: flex;
+  justify-content: space-between;
 }
 
 //Google Maps
@@ -197,7 +229,7 @@ body {
   bottom: 180px !important;
 }
 .custom-google-map {
-  width: 70%;
+  width: 870px;
 }
 
 //Sidebar
@@ -206,7 +238,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0px 30px;
+  padding-left: 30px;
+  width: 100%;
+  max-width: 301px;
 
   h1 {
     font-weight: 600;
@@ -224,6 +258,7 @@ body {
     font-size: 10px;
     letter-spacing: 1.78px;
     line-height: 10px;
+    padding-top: -1rem;
   }
 }
 
@@ -240,7 +275,7 @@ body {
 .car-container-content {
   display: flex;
   flex-direction: column;
-  padding: 18px;
+  padding: 15px;
   max-height: 33%;
   align-items: flex-start;
 }
