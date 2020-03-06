@@ -7,7 +7,6 @@ function Button (props){
     <button 
       className={ buttonStyle ? 'btn-clicked' : 'btn-non-clicked'}
       onClick={()=>{
-        // console.log('idx in button',props.carId, props.carTitle)
         // window.alert(`The dealer will be alerted about you inquiry for ${props.carTitle}`)
         props.handleOffer(props.carId);
         }}

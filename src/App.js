@@ -31,7 +31,7 @@ class App extends Component {
   }
 
   render() {
-    console.log('Deploy version 1.1. Last finished component - Sidebar. Next - Clear Selection button')
+    console.log('Deploy version 1.1. Last finished component - Clear Selection button')
     return (
       <div className="App">
         <div className="container">

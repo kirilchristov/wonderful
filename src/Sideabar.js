@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import Button from './Button'
 import Image from './Image'
 
@@ -9,19 +8,14 @@ function Sidebar(props){
   
   //We clean the selection by resetting to initialState
   const initialState = []
-
-
-  //reset state func
-  // const resetState = () => {
-  //   setRequested(initialState)
-  // }
+  const resetState = () => {
+    console.log('reset initiated')
+    setRequested(initialState)
+  }
 
   const handleOffer = (id) => {
-    console.log('In handle offeer function', id)
     setRequested([...requested, id])
   }
-  // the offer logic above
-
 
   //By deafult the active location is always Brooklyn
   const activeLocation = props.selectedLocation.name ? props.selectedLocation.name : props.locationData[0].name;
@@ -43,7 +37,7 @@ function Sidebar(props){
       <div className="car-container-content">
         <h1>{item.title}</h1>
         <p>STARTING AT ${item.price}</p>
-        <Button  requested={requested} handleOffer={handleOffer} carTitle={item.title} carId={item.id}/>
+        <Button requested={requested} handleOffer={handleOffer} carTitle={item.title} carId={item.id}/>
       </div>
     </div> 
   ))
@@ -56,7 +50,7 @@ function Sidebar(props){
         {itemsToDisplay}
       </div>
     </div>
-    <button className="clear-btn">
+    <button className="clear-btn" onClick={resetState}>
       CLEAR SELECTION
     </button>
   </div>
