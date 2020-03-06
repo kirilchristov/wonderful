@@ -78,34 +78,33 @@ body {
   margin-top: 82px;
 }
 
-// .control-dots {
-//   // Give me some style
-// }
-
 .carousel-custom {
+  border: 5px solid pink;
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
   margin-top: -200px;
 }
 
-// .carousel-custom {
-//     .slide {
-//         opacity: 50% !important;
-//     }
-//     .selected {
-//       opacity: 100% !important;
-//   }
-//   }
+.carousel .slider {
+  max-width: 800px;
+  max-height: 348px;
+}
+.carousel .slide img {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 
 .carousel-custom .slide {
   opacity: 0.5!important;
 }
 
+
 .carousel-custom .selected {
   opacity: 1!important;
-}
 
+}
 
 
 

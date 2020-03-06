@@ -24,19 +24,20 @@ function Hero(props){
       selectedItem={1}
       // showIndicators={false}
       showThumbs={false}
+      dynamicHeight={true}
       showArrows={false}
-      centerMode={true}
+      // centerMode={true}
       onChange={(e) => props.handleChange(e)}
-      centerSlidePercentage={50}
+      // centerSlidePercentage={50}
       statusFormatter={()=> {}} 
       >
-        <div onClick={()=> props.handleClick(car1.id)}>
-          <img className="car-image far-left" src={car1.imageUrl} alt={car1.title} />
+        <div className="slide-wrapper left" onClick={()=> props.handleClick(car1.id)}>
+          <img className="car-image" src={car1.imageUrl} alt={car1.title} />
         </div>
-        <div onClick={()=> props.handleClick(car2.id)}>
+        <div className="slide-wrapper middle" onClick={()=> props.handleClick(car2.id)}>
           <img className="car-image" src={car2.imageUrl} alt={car2.title} />
         </div>
-        <div onClick={()=> props.handleClick(car3.id)}>
+        <div className="slide-wrapper right" onClick={()=> props.handleClick(car3.id)}>
           <img className="car-image" src={car3.imageUrl}  alt={car3.title} />
         </div>
       </Carousel>
