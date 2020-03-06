@@ -3,9 +3,8 @@ html {
 }
 body {
   font-family: "Open Sans", Helvetica, Arial, serif;
-  min-height: 100%;
+  min-height: 1500px; //<--- min height just for presentation purpose
 }
-
 
 .container {
   max-width: 1170px;
@@ -60,7 +59,7 @@ body {
   width: 50px;
   background-color: black;
   border-radius: 50%;
-  color: white !important; // <- overrides the bootstrap style
+  color: white !important; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,26 +86,22 @@ body {
 }
 
 .carousel .slider {
+  left: 32%;
+  width: 100vw;
+  width: 50%;
+  height: 50%;
   max-width: 800px;
   max-height: 348px;
 }
-.carousel .slide img {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 
 .carousel-custom .slide {
   opacity: 0.5!important;
 }
 
-
 .carousel-custom .selected {
   opacity: 1!important;
 
 }
-
-
 
 .info {
   background: rgba(0,0,0,0.90);
@@ -136,7 +131,6 @@ body {
 
 .text {
   text-align: center;
-
 }
 
 .car-model {
@@ -205,11 +199,25 @@ body {
 }
 
 //Sidebar
+//Cars container
 .sidebar-container {
+  padding: 0px 30px;
+  h1 {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 2.13px;
+    line-height: 18px;
+  }
   h2 {
     font-weight: 300;
     font-size: 20px;
     color: black;
+  }
+  p {
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 1.78px;
+    line-height: 10px;
   }
 }
 
@@ -218,44 +226,43 @@ body {
     height: 43.5px;
     width: 100px;
   }
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
 }
 
+.car-container-content {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  max-height: 33%;
+  align-items: flex-start;
+}
+
+//Button 'REQUEST QUOTE'
 .btn-non-clicked {
   color: white;
   background-color: black;
   padding: 7px 8px;
-  font-weight: 400;
-  font-size: 8px;
-  letter-spacing: 1.42px;
-  line-height: 8px;
   width: 101px;
   height: 22px;
   border: none;
 }
 
 .btn-clicked {
-  border: 1px solid #000000;
+  border: 1px solid black;
+  background-color: white;
   border-radius: 1px;
   padding: 7px 7px 7px 9px;
-  font-weight: 400;
-  font-size: 8px;
   color: black;
-  letter-spacing: 1.42px;
-  line-height: 8px;
   width: 78px;
   height: 22px;
 }
 
-// //Since it's one-time use - !important is used for rapid styling
-.MuiButton-root {
-
+.btn-non-clicked, 
+.btn-clicked {
+  font-weight: 400;
+  font-size: 8px;
+  letter-spacing: 1.42px;
+  line-height: 8px;
 }
-
-// .MuiButton-root:focus {
-//   color: green;
-// }
-
-
-
-
-
