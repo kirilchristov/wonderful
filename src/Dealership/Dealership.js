@@ -8,8 +8,6 @@ import crosshair from '../assets/crosshair.png'
 
 function Dealership(props){
   const [selectedLocation, setSelectedLocation] = useState(locationData[0])
-
-  console.log('carData in dealership',props.carData)
   const handleClick = (location) => {
     setSelectedLocation(location)
   }
