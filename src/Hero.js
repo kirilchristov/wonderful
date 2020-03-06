@@ -5,6 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 
 function Hero(props){
+  console.log("The props I get", props.selectedCar.id)
   const { carData } = props;
 
   const car1 = carData[0]
@@ -18,6 +19,11 @@ function Hero(props){
         <p className="p-light">INTRODUCING THE NEW</p>
         <h1>{props.selectedCar.title}</h1>
         <p className="p-light">{props.selectedCar.info}</p>
+        <ul className="dots">
+          <li className={props.selectedCar.id === car1.id ? 'filledDot' : 'emptyDot'}></li>
+          <li className={props.selectedCar.id === car2.id ? 'filledDot' : 'emptyDot'}></li>
+          <li className={props.selectedCar.id === car3.id ? 'filledDot' : 'emptyDot'}></li>
+        </ul>
       </div>
       <Carousel 
       className="carousel-custom"
@@ -27,14 +33,16 @@ function Hero(props){
       showArrows={false}
       onChange={(e) => props.handleChange(e)}
       showStatus={false}
+      showIndicators={false}
       >
-        <div className="slide-wrapper left" onClick={()=> props.handleClick(car1.id)}>
+      {/* Left the following code for clarity how the carousel works, could be mapped too */}
+        <div className="slide-wrapper" onClick={()=> props.handleClick(car1.id)}>
           <img className="car-image" src={car1.imageUrl} alt={car1.title} />
         </div>
-        <div className="slide-wrapper middle" onClick={()=> props.handleClick(car2.id)}>
+        <div className="slide-wrapper" onClick={()=> props.handleClick(car2.id)}>
           <img className="car-image" src={car2.imageUrl} alt={car2.title} />
         </div>
-        <div className="slide-wrapper right" onClick={()=> props.handleClick(car3.id)}>
+        <div className="slide-wrapper" onClick={()=> props.handleClick(car3.id)}>
           <img className="car-image" src={car3.imageUrl}  alt={car3.title} />
         </div>
       </Carousel>
