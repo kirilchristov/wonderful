@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Header from './Header'
-import Hero from './Hero'
-import Dealership from './Dealership'
-import carData from './carData'
+import Hero from './Hero/Hero'
+import Dealership from './Dealership/Dealership'
+import carData from './Data/carData'
 
 import './bootstrap.min.css'
 import './App.scss';

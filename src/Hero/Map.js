@@ -2,8 +2,8 @@ import React from 'react';
 import { GoogleMap, withScriptjs, withGoogleMap, Marker } from 'react-google-maps'
 import mapStyles from './mapStyles'
 
-import redPin from '../src/assets/red_pin.png'
-import blackPin from '../src/assets/black_pin.png'
+import redPin from '../assets/red_pin.png'
+import blackPin from '../assets/black_pin.png'
 
 function Map(props){
   return (

@@ -1,10 +1,10 @@
 import React, { useState }  from 'react';
-import WrappedMap from './Map'
+import WrappedMap from '../Hero/Map'
 import Sidebar from './Sideabar'
-import config from './config.js'
+import config from '../config.js'
 
-import locationData from './locationData'
-import crosshair from '../src/assets/crosshair.png'
+import locationData from '../Data/locationData'
+import crosshair from '../assets/crosshair.png'
 
 function Dealership(props){
   const [selectedLocation, setSelectedLocation] = useState(locationData[0])

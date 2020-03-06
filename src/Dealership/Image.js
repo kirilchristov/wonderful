@@ -1,5 +1,5 @@
 import React from 'react';
-import checkmark from '../src/assets/checkmark.png'
+import checkmark from '../assets/checkmark.png'
 
 function Image(props){
   const imageStyle = props.requested.includes(props.carId)
