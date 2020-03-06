@@ -263,10 +263,32 @@ body {
 }
 
 .car-container {
-  .thumb {
+  // .thumb {
+  //   height: 43.5px;
+  //   width: 100px;
+  // }
+  .image-not-checked,
+  .image-checked {
     height: 43.5px;
     width: 100px;
   }
+  .image-container {
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .overlay {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      opacity: 100%;
+    }
+    .overlay-none {
+      display: none;
+    }
+  }
+  
   border-bottom: 1px solid black;
   display: flex;
   align-items: center;

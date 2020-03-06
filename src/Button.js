@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function Button (props){
-  const [buttonStyle, setButtonStyle] = useState(false)
-  const [buttonStatus, setButtonStatus] = useState(false)
+  const buttonStyle = props.requested.includes(props.carId)
   
   return (
     <button 
       className={ buttonStyle ? 'btn-clicked' : 'btn-non-clicked'}
       onClick={()=>{
-        setButtonStyle(true);
-        setButtonStatus(true);
+        // console.log('idx in button',props.carId, props.carTitle)
+        // window.alert(`The dealer will be alerted about you inquiry for ${props.carTitle}`)
+        props.handleOffer(props.carId);
         }}
-      >{!buttonStatus ? 'REQUEST QUOTE' : 'REQUESTED!' }
+      >{!buttonStyle ? 'REQUEST QUOTE' : 'REQUESTED!' }
     </button>
   );
 }

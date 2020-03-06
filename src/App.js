@@ -2,14 +2,11 @@ import React, { Component } from 'react';
 import Header from './Header'
 import Hero from './Hero'
 import Dealership from './Dealership'
-
-import carData from './CarData'
+import carData from './carData'
 
 import './bootstrap.min.css'
 
 import './App.scss';
-
-
 
 class App extends Component {
   constructor(props) {
@@ -25,7 +22,6 @@ class App extends Component {
     this.setState({
       selectedCar: carData[id-1]
     })
-    console.log('Current selected car',this.state.selectedCar.title);
   }
 
   handleChange = (id) => {
@@ -35,7 +31,7 @@ class App extends Component {
   }
 
   render() {
-    // console.log('Deploy version 1')
+    console.log('Deploy version 1.1. Last finished component - Sidebar. Next - Clear Selection button')
     return (
       <div className="App">
         <div className="container">
@@ -45,7 +41,7 @@ class App extends Component {
             handleClick={this.handleClick} 
             selectedCar={this.state.selectedCar} 
             handleChange={this.handleChange}/>
-          <Dealership />
+          <Dealership carData={carData} />
         </div>
       </div>
     );

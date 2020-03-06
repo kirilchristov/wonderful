@@ -6,10 +6,10 @@ import config from './config.js'
 import locationData from './locationData'
 import crosshair from '../src/assets/crosshair.png'
 
-function Dealership(){
+function Dealership(props){
   const [selectedLocation, setSelectedLocation] = useState(locationData[0])
 
-
+  console.log('carData in dealership',props.carData)
   const handleClick = (location) => {
     setSelectedLocation(location)
   }
@@ -37,7 +37,7 @@ function Dealership(){
             locationData={locationData}
           />
         </div>
-        <Sidebar className="sidebar" selectedLocation={selectedLocation} locationData={locationData} />
+        <Sidebar className="sidebar" selectedLocation={selectedLocation} locationData={locationData} carData={props.carData} />
       </div>
     </div>
   );
