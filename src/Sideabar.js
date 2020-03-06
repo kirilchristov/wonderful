@@ -29,17 +29,17 @@ function Sidebar(props){
   ))
 
   return (
-   <div className="sidebar-container">
+  <div className="sidebar-container">
     <div className="cars-column">
       <h2>Availability at {activeLocation}:</h2>
       <div className="car-list">
         {itemsToDisplay}
       </div>
     </div>
-    <div className="clear-button">
-{/* Add button here */}
-    </div>
-   </div>
+    <button className="clear-btn">
+      CLEAR SELECTION
+    </button>
+  </div>
   );
 }
 

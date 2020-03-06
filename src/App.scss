@@ -78,7 +78,6 @@ body {
 }
 
 .carousel-custom {
-  border: 5px solid pink;
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
@@ -107,7 +106,7 @@ body {
   background: rgba(0,0,0,0.90);
   font-weight: 300;
   font-size: 14px;
-  color: #FFFFFF;
+  color: white;
   width: 370px;
   height: 352px;
   position: relative;
@@ -120,7 +119,7 @@ body {
   h1 {
     font-weight: 300;
     font-size: 42px;
-    color: #FFFFFF;
+    color: white;
     line-height: 62px;
   }
 
@@ -147,6 +146,9 @@ body {
 
 //------------Dealerships--------------//
 
+.dealership-container {
+  height: 588px;
+}
 
 //Headline
 .section-title{
@@ -201,7 +203,11 @@ body {
 //Sidebar
 //Cars container
 .sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 0px 30px;
+
   h1 {
     font-weight: 600;
     font-size: 12px;
@@ -265,4 +271,22 @@ body {
   font-size: 8px;
   letter-spacing: 1.42px;
   line-height: 8px;
+}
+
+//Clear Button
+.clear-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  height: 51px;
+  &:hover {
+    background-color: #A80707;
+  }
+  &:after {
+    transform: scale(0.001, 0.001);
+  }
 }

@@ -15,7 +15,7 @@ function Dealership(){
   }
 
   return (
-    <div className="dealership container">
+    <div className="dealership-container">
       <div className="headline-container">
         <div className="headline">
           <div className="crosshair">
@@ -30,7 +30,7 @@ function Dealership(){
           <WrappedMap 
             googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${config.googleAPIKey}`}
             loadingElement={<div style={{ height: `100%` }} />}
-            containerElement={<div style={{ height: `400px` }} />}
+            containerElement={<div style={{ height: `500px` }} />}
             mapElement={<div style={{ height: `100%` }} />}
             handleClick={handleClick} 
             selectedLocation={selectedLocation}
