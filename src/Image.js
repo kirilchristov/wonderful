@@ -1,5 +1,4 @@
 import React from 'react';
-
 import checkmark from '../src/assets/checkmark.png'
 
 function Image(props){

@@ -1,11 +1,9 @@
-html {
-  height: 100%
-}
+//Base settings
+
 body {
   font-family: "Open Sans", Helvetica, Arial, serif;
   min-height: 1500px; //<--- min height just for presentation purpose
 }
-
 .container {
   max-width: 1170px;
 }
@@ -99,7 +97,6 @@ body {
 
 .carousel-custom .selected {
   opacity: 1!important;
-
 }
 
 //Info bar
@@ -116,7 +113,6 @@ body {
   padding-top: 51px;
   padding-right: 33px;
  
-
   h1 {
     font-weight: 300;
     font-size: 42px;
@@ -155,8 +151,7 @@ body {
       background-color: transparent;
       border: 1px solid white;
     }
-  }
-  
+  } 
 }
 
 .text {
@@ -263,17 +258,12 @@ body {
 }
 
 .car-container {
-  // .thumb {
-  //   height: 43.5px;
-  //   width: 100px;
-  // }
   .image-not-checked,
   .image-checked {
     height: 43.5px;
     width: 100px;
   }
   .image-container {
-    // position: relative;
     display: flex;
     justify-content: center;
     align-items: center;

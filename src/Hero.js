@@ -3,9 +3,8 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
-
+//In this file a left a lot of repetative code just for clarity. It's not DRY at all, but it is one-time only (for visual clarity), it can be easily can be mapped as well. 
 function Hero(props){
-  console.log("The props I get", props.selectedCar.id)
   const { carData } = props;
 
   const car1 = carData[0]
@@ -13,7 +12,6 @@ function Hero(props){
   const car3 = carData[2]
 
   return (
-    
     <div className="hero">
       <div className="info">
         <p className="p-light">INTRODUCING THE NEW</p>
@@ -35,7 +33,6 @@ function Hero(props){
       showStatus={false}
       showIndicators={false}
       >
-      {/* Left the following code for clarity how the carousel works, could be mapped too */}
         <div className="slide-wrapper" onClick={()=> props.handleClick(car1.id)}>
           <img className="car-image" src={car1.imageUrl} alt={car1.title} />
         </div>

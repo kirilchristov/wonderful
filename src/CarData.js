@@ -1,3 +1,5 @@
+//Simulated data that comes from a fetch 
+
 const carData = [
   {
     id: 1,

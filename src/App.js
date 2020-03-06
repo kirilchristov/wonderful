@@ -5,7 +5,6 @@ import Dealership from './Dealership'
 import carData from './carData'
 
 import './bootstrap.min.css'
-
 import './App.scss';
 
 class App extends Component {
@@ -31,7 +30,7 @@ class App extends Component {
   }
 
   render() {
-    console.log('Deploy version 1.1. Last finished component - Clear Selection button')
+    console.log('Deploy version 1.2')
     return (
       <div className="App">
         <div className="container">

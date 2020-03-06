@@ -1,3 +1,5 @@
+//react-goole-maps stylesheet
+
 export default [
   {
       "featureType": "water",

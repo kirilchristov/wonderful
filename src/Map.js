@@ -1,13 +1,11 @@
 import React from 'react';
 import { GoogleMap, withScriptjs, withGoogleMap, Marker } from 'react-google-maps'
-
 import mapStyles from './mapStyles'
 
 import redPin from '../src/assets/red_pin.png'
 import blackPin from '../src/assets/black_pin.png'
 
 function Map(props){
-
   return (
       <GoogleMap 
         defaultZoom={10.34}

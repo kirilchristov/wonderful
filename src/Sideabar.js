@@ -6,10 +6,9 @@ import Image from './Image'
 function Sidebar(props){
   const [requested, setRequested] = useState([])
   
-  //We clean the selection by resetting to initialState
+  //We clean the car selection by resetting the state to initialState
   const initialState = []
   const resetState = () => {
-    console.log('reset initiated')
     setRequested(initialState)
   }
 
@@ -17,16 +16,18 @@ function Sidebar(props){
     setRequested([...requested, id])
   }
 
-  //By deafult the active location is always Brooklyn
+  //By deafult the active location is always Brooklyn, so we don't have an empty component
   const activeLocation = props.selectedLocation.name ? props.selectedLocation.name : props.locationData[0].name;
   const cars = [];
   
+  //Getting info about the quantities per location
   props.carData.forEach(car => {
     if (props.selectedLocation.inStock.includes(car.id)) {
       cars.push(car)
     }
   })
 
+  //Displaying the ones that are present in the location
   const itemsToDisplay = cars.map((item,idx) => (
     <div key={idx} className="car-container">
       <Image className="car-container-image"

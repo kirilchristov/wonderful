@@ -1,3 +1,5 @@
+//Sample data file with quantitites and location info
+
 const locationData = [
   {
     id: 1,
