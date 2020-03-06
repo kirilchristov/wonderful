@@ -15,13 +15,10 @@ function Dealership(){
   }
 
   return (
-    <div className="dealership">
+    <div className="dealership container">
       <div className="headline-container">
         <div className="headline">
           <div className="crosshair">
-          {/* Serving from public */}
-            {/* <img src="/images/crosshair.png" alt="crosshair-icon"></img> */}
-          {/* Serving from src */}
             <img src={crosshair} alt="crosshair-icon"></img>
           </div>
           <h1 className="section-title">SELECT YOUR DEALERSHIP</h1>
