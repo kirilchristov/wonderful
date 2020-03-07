@@ -31,7 +31,7 @@ function Hero(props){
       showArrows={false}
       onChange={(e) => props.handleChange(e)}
       showStatus={false}
-      showIndicators={false}
+      showIndicators={true}
       >
         <div className="slide-wrapper" onClick={()=> props.handleClick(car1.id)}>
           <img className="car-image" src={car1.imageUrl} alt={car1.title} />
