@@ -30,7 +30,7 @@ class App extends Component {
   }
 
   render() {
-    console.log('Deploy version 1.5 * * * What\'s new - Media queries added')
+    console.log('Deploy version 1.6 * * * What\'s new - Overlay fixed')
     return (
       <div className="App">
         <div className="container">
