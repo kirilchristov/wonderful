@@ -3,9 +3,11 @@ import Header from './Header'
 import Hero from './Hero/Hero'
 import Dealership from './Dealership/Dealership'
 import carData from './Data/carData'
+import ReactDOM from 'react-dom';
 
 import './bootstrap.min.css'
 import './App.scss';
+
 
 class App extends Component {
   constructor(props) {
@@ -31,6 +33,7 @@ class App extends Component {
 
   render() {
     console.log('Deploy version 1.6 * * * What\'s new - Overlay fixed')
+
     return (
       <div className="App">
         <div className="container">

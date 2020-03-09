@@ -427,6 +427,7 @@ body {
   .control-dots {
     display: block;
     left: -18px;
+    
   }
   //Dealership 
   .dealership-container {
@@ -475,6 +476,20 @@ body {
     .gmnoprint {
       display:none;
     }
+  }
+
+  //Test area
+
+  .carousel .control-dots .dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid white;
+  }
+
+  .carousel .control-dots .dot.selected {
+    background-color: white;
   }
 
 }

@@ -32,7 +32,8 @@ function Sidebar(props){
     <div key={idx} className="car-container">
       <Image className="car-container-image"
       carId={item.id}
-      requested={requested} 
+      requested={requested}
+      handleOffer={handleOffer} 
       src={item.thumbUrl} 
       alt={item.title}/>
       <div className="car-container-content">
