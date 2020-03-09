@@ -3,7 +3,7 @@ import Header from './Header'
 import Hero from './Hero/Hero'
 import Dealership from './Dealership/Dealership'
 import carData from './Data/carData'
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 
 import './bootstrap.min.css'
 import './App.scss';
