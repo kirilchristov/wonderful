@@ -3,11 +3,12 @@ import Header from './Header'
 import Hero from './Hero/Hero'
 import Dealership from './Dealership/Dealership'
 import carData from './Data/carData'
-// import ReactDOM from 'react-dom';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import './bootstrap.min.css'
 import './App.scss';
-
 
 class App extends Component {
   constructor(props) {
@@ -17,6 +18,10 @@ class App extends Component {
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleChange = this.handleChange.bind(this);
+  }
+
+  componentDidMount() {
+    AOS.init({duration: 2000})
   }
 
   handleClick = (id) => {  
@@ -32,8 +37,7 @@ class App extends Component {
   }
 
   render() {
-    console.log('Deploy version 1.6 * * * What\'s new - Overlay fixed')
-
+    console.log('v1.8')
     return (
       <div className="App">
         <div className="container">

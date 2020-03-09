@@ -29,7 +29,7 @@ function Sidebar(props){
 
   //Displaying the ones that are present in the location
   const itemsToDisplay = cars.map((item,idx) => (
-    <div key={idx} className="car-container">
+    <div data-aos='fade-in' key={idx} className="car-container">
       <Image className="car-container-image"
       carId={item.id}
       requested={requested}
@@ -52,7 +52,7 @@ function Sidebar(props){
         {itemsToDisplay}
       </div>
     </div>
-    <button className="clear-btn" onClick={resetState}>
+    <button className="clear-btn" type="reset" onClick={resetState}>
       CLEAR SELECTION
     </button>
   </div>

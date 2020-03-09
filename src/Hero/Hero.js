@@ -12,8 +12,8 @@ function Hero(props){
   const car3 = carData[2]
 
   return (
-    <div className="hero">
-      <div className="info">
+    <div className="hero" data-aos='fade-in'>
+      <div className="info" data-aos='fade-in'>
         <p className="p-light">INTRODUCING THE NEW</p>
         <h1>{props.selectedCar.title}</h1>
         <p className="p-light">{props.selectedCar.info}</p>
