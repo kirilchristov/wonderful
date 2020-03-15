@@ -103,9 +103,6 @@ body {
   opacity: 1!important;
 }
 
-.control-dots {
-  display: none;
-}
 
 //Info bar
 .info {
@@ -133,31 +130,27 @@ body {
   }
 }
 
-//Info bar dots
+//Info bar and control dots
 .info {
   li {
     list-style: none;
   }
-  .dots {
+  .control-dots {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
     max-width: 75px;
-
-    .filledDot,
-    .emptyDot {
+  
+    .dot {
       height: 15px;
       width: 15px;
       border-radius: 50%;
-    }
-    
-    .filledDot {
-      background-color: white;
-    }
-    .emptyDot {
       background-color: transparent;
       border: 1px solid white;
+    }
+    .selected {
+      background-color: white;
     }
   } 
 }
@@ -430,24 +423,24 @@ body {
     width: 110vw;
   }
 
-  .carousel .control-dots .dot {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 1px solid white;
+  // .carousel .control-dots .dot {
+  //   height: 15px;
+  //   width: 15px;
+  //   border-radius: 50%;
+  //   background-color: transparent;
+  //   border: 1px solid white;
     
-  } 
+  // } 
 
-  .carousel .control-dots .selected {
-    background-color: white;
-  }
+  // .carousel .control-dots .selected {
+  //   background-color: white;
+  // }
 
-  .control-dots {
-    display: block;
-    left: -18px;
-    margin-top: 15x;
-  }
+  // .control-dots {
+  //   display: block;
+  //   left: -18px;
+  //   margin-top: 15x;
+  // }
 
   //Dealership 
   .dealership-container {

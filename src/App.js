@@ -21,7 +21,13 @@ class App extends Component {
   }
 
   componentDidMount() {
+    //AOS controls the animation 
     AOS.init({duration: 2000})
+    //Here we take the native control dots from the carousel and append them to another DOM element,
+    // because we are going to display them at a different place
+    const controlDots = document.getElementsByClassName("control-dots")[0]
+    const dotsPlaceholder =  document.getElementsByClassName("info")[0]
+    dotsPlaceholder.appendChild(controlDots)
   }
 
   handleClick = (id) => {  
@@ -36,8 +42,9 @@ class App extends Component {
     })
   }
 
+
   render() {
-    console.log('v1.8')
+    console.log('v1.9')
     return (
       <div className="App">
         <div className="container">

@@ -17,11 +17,7 @@ function Hero(props){
         <p className="p-light">INTRODUCING THE NEW</p>
         <h1>{props.selectedCar.title}</h1>
         <p className="p-light">{props.selectedCar.info}</p>
-        <ul className="dots">
-          <li className={props.selectedCar.id === car1.id ? 'filledDot' : 'emptyDot'}></li>
-          <li className={props.selectedCar.id === car2.id ? 'filledDot' : 'emptyDot'}></li>
-          <li className={props.selectedCar.id === car3.id ? 'filledDot' : 'emptyDot'}></li>
-        </ul>
+        {/* the control dots from the carousel will appear here. Look App.js - ComponentDidMount */}
       </div>
       <Carousel 
       className="carousel-custom"
